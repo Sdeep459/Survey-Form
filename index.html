@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Fira+Sans+Condensed&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1 id="title">COVID-19 Recipient Vaccination Questionnaire</h1>
+        <p id="description">PERSONAL AND CONTACT INFORMATION</p>
+      </header>
+      <form id="survey-form" class="container">
+
+        <div class="text">
+          <label id="name-label" class="col-left">Name:</label>
+          <input id="name" class="col-right" type="text" placeholder="Enter your full name" required>
+        </div>
+        <div class="text">
+          <label id="email-label" class="col-left">Email:</label>
+          <input id="email" class="col-right" type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="text">
+          <label id="number-label" class="col-left">Age:</label>
+          <input id="number" class="col-right" type="number" placeholder="Age" min="1" max="100" required>
+        </div>
+        <div>
+          <label id="dropdown-label" class="col-left">Are you responsible for caring/cleaning in areas with COVID Patients?</label>
+          <select id="dropdown" class="col-right">
+            <option value="">Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div>
+          <label id="dropdown-label" class="col-left">Are you responsible for handling decedents with COVID?</label>
+          <select id="dropdown" class="col-right">
+            <option value="">Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+      </div>
+        <div>
+          <label id="radio-label" class="col-left">Do you work or reside in the organization listed above?</label>
+          <ul id="radio" class="col-right" style="list-style: none">
+            <li>
+              <input type="radio" name="recommend" value="work" required>
+              <label for="work">Work</label>
+            </li>
+            <li>
+              <input type="radio" name="recommend" value="reside">
+              <label for="reside">Reside</label>
+            </li>
+            <li>
+              <input type="radio" name="recommend" value="both">
+              <label for="both">Both</label>
+            </li>
+          </ul>
+        </div>
+        <div id="checkbox">
+          <label id="checkbox-label" class="col-left">What is the type of organization listed above? (Please Select One or Multiple):</label>
+          <div class="col-right" id="checkbox">
+            <div>
+              <input type="checkbox" name="Public Health Department" value="Public Health Department">
+              <label for="Public Health Department">Public Health Department</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Family or Internal Medicine" value="Family or Internal Medicine">
+              <label for="Family or Internal Medicine">Family or Internal Medicine</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Geriatric Medicine" value="Geriatric Medicine">
+              <label for="Geriatric Medicine">Geriatric Medicine</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Hospital" value="Hospital">
+              <label for="Hospital">Hospital</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Pediatrician" value="Pediatrician">
+              <label for="Pediatrician">Pediatrician</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="STD/HIV Services" value="STD/HIV Services">
+              <label for="STD/HIV Services">STD/HIV Services</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Urgent Care" value="Urgent Care">
+              <label for="Urgent Care">Urgent Care</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Long-Term Care Facility" value="Long-Term Care Facility">
+              <label for="Long-Term Care Facility">Long-Term Care Facility</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Family Planning" value="Family Planning">
+              <label for="Family Planning">Family Planning</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Pharmacy" value="Pharmacy">
+              <label for="Pharmacy">Pharmacy</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Other Health Care Facility" value="Other Health Care Facility">
+              <label for="Other Health Care Facility">Other Health Care Facility</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Dentist" value="Dentist">
+              <label for="Dentist">Dentist</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Homeless or Crisis Care" value="Homeless or Crisis Care">
+              <label for="Homeless or Crisis Care">Homeless or Crisis Care</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Government Agency" value="Government Agency">
+              <label for="Government Agency">Government Agency</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Construction" value="Construction">
+              <label for="Construction">Construction</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Religious Organizations" value="Religious Organizations">
+              <label for="Religious Organizations">Religious Organizations</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Group or Congregate Living" value="Group or Congregate Living">
+              <label for="Group or Congregate Living">Group or Congregate Living</label>        
+            </div>
+            <div>
+              <input type="checkbox" name="Prison" value="Prison">
+              <label for="Prison">Prison</label>        
+            </div>
+              <input type="checkbox" name="Videos" value="Videos">
+              <label for="Videos">Videos</label>        
+            </div>
+          </div>
+        </div>
+        <div class="text">
+          <label id="textarea-label" class="col-left">Any Queries?</label>
+          <textarea class="col-right" rows="10" cols="50"></textarea>
+        </div>
+        <div>
+          <button id="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>  
+</html>
